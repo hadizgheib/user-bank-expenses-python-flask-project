@@ -1,0 +1,62 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+ 
+}
+
+header h3{
+    margin: 5px;
+    font-size: 1.2em;
+    text-align: left;
+    color:black;
+}
+
+/* Chart Container Styling */
+.chart-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between charts */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    padding: 20px;
+}
+
+.chart {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.chart img {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column; /* Stack charts on smaller screens */
+    }
+}
