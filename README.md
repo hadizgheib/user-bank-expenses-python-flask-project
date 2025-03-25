@@ -7,7 +7,6 @@ This is a Flask-based web application for analyzing personal bank expenses using
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
-- [Future Improvements](#future-improvements)
 - [License](#license)
 
 ---
@@ -57,6 +56,11 @@ python app.py
 ```
 The application will be accessible at **[http://127.0.0.1:5000/](http://127.0.0.1:5000/)**.
 
+To run the code:
+```bash
+python app.py
+```
+
 ---
 
 ## 📁 File Structure
@@ -89,13 +93,6 @@ Install them using:
 ```bash
 pip install -r requirements.txt
 ```
-
----
-
-## 🚧 Future Improvements
-- ✅ Add user authentication.
-- ✅ Allow users to upload their own Excel files.
-- ✅ Improve UI with interactive visualizations.
 
 ---
 
