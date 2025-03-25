@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Expense Analytics</h1>
+        <h3>Balance ${{ net_savings }} </h3>
+    </header>
+
+    <main>
+        <div class="chart-container">
+
+          
+            <div class="chart">
+                <h2>Monthly Balance Over Time</h2>
+                <img src="{{ url_for('static', filename=balance_chart) }}" alt="Monthly Balance Chart">
+            </div>
+            <div class="chart">
+              <h2>Income Sources Breakdown</h2>
+              <img src="{{ url_for('static', filename=income_sources_chart) }}" alt="Income Sources Pie Chart">
+          </div>
+
+        </div>
+
+        <div class="chart-container">
+            
+            <div class="chart">
+                <h2>Needs vs Wants</h2>
+                <img src="{{ url_for('static', filename=correlation_chart) }}" alt="Spending Correlation Heatmap">
+            </div>
+            <div class="chart-container">
+              <div class="chart">
+                  <h2>Monthly Income vs. Expenses</h2>
+                  <img src="{{ url_for('static', filename=income_vs_expenses_chart) }}" alt="Monthly Income vs Expenses Chart">
+              </div>
+        </div>
+
+        <div class="chart-container">
+            
+            <div class="chart">
+                <h2>Spending by Category Over Time</h2>
+                <img src="{{ url_for('static', filename=h3_h) }}" alt="Spending by Category Chart">
+            </div>
+            <div class="chart">
+              <h2>Net Savings for Next 6 Months</h2>
+              <img src="{{ url_for('static', filename=h2_h) }}" alt="Net Savings Forecast">
+          </div>
+
+        </div>
+    </main>
+</body>
+</html>
